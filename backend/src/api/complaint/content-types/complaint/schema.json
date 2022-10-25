@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaints",
+  "info": {
+    "singularName": "complaint",
+    "pluralName": "complaints",
+    "displayName": "complaint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "details": {
+      "type": "text"
+    },
+    "user_id": {
+      "type": "integer"
+    },
+    "response": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::response.response"
+    },
+    "branch": {
+      "type": "string"
+    }
+  }
+}
